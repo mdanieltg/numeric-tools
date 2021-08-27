@@ -1,0 +1,9 @@
+<div class="panel">
+  <label for="{{identifier}}" class="panel-caption">{{panelCaption}}:</label>
+  <textarea #input id="{{identifier}}" rows="10" [(ngModel)]="content"></textarea>
+  <div class="action-panel">
+    <button *ngIf="hasAction" (click)="action()" class="primary-action">{{actionCaption}}</button>
+    <button (click)="copy(input)">Copiar</button>
+    <button (click)="clear(input)">Limpiar</button>
+  </div>
+</div>

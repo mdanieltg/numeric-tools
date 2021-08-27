@@ -1,0 +1,26 @@
+textarea {
+  height: 100vh;
+  max-height: 22em;
+  font-family: monospace;
+  font-size: 0.75em;
+}
+
+.panel {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.panel-caption {
+  font-weight: bold;
+}
+
+.panel-caption {
+  margin: 0;
+}
+
+.action-panel {
+  display: flex;
+  margin-top: 0.5em;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

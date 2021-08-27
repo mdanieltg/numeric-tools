@@ -1,0 +1,16 @@
+<div class="option-panel">
+  <label for="chk-contract-two-value">
+    <input type="checkbox" id="chk-contract-two-value"
+           [(ngModel)]="doNotContractPairs"> No contraer rangos de dos valores.
+  </label>
+</div>
+<div class="top-panel">
+  <app-base-panel panelCaption="Desplegado"
+                  actionCaption="Plegar"
+                  [content]="unfoldedValues"
+                  (actionEvent)="fold($event)"></app-base-panel>
+  <app-base-panel panelCaption="Plegado"
+                  actionCaption="Desplegar"
+                  [content]="foldedValues"
+                  (actionEvent)="unfold($event)"></app-base-panel>
+</div>

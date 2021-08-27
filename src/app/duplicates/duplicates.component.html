@@ -1,0 +1,10 @@
+<div class="top-panel">
+  <app-base-panel panelCaption="Listado a analizar"
+                  actionCaption="Buscar"
+                  [content]="duplicatesList"
+                  (actionEvent)="search($event)"></app-base-panel>
+  <app-base-panel [hasAction]="false"
+                  panelCaption="Listado filtrado"
+                  actionCaption="Desplegar"
+                  [content]="filteredList"></app-base-panel>
+</div>

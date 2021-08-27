@@ -1,0 +1,27 @@
+<div class="top-panel">
+  <div class="panel">
+    <div class="grouped-panel">
+      <app-base-panel [hasAction]="false"
+                      panelCaption="Qué buscar"
+                      [content]="list"
+                      class="half-panel"></app-base-panel>
+      <app-base-panel [hasAction]="false"
+                      panelCaption="En dónde buscar"
+                      [content]="searchPool"
+                      class="half-panel"></app-base-panel>
+    </div>
+    <div class="action-panel">
+      <button (click)="search()" class="primary-action full-size-button">Buscar</button>
+    </div>
+  </div>
+  <div class="grouped-panel">
+    <app-base-panel [hasAction]="false"
+                    panelCaption="Encontrado"
+                    content="{{foundList}}"
+                    class="half-panel"></app-base-panel>
+    <app-base-panel [hasAction]="false"
+                    panelCaption="No encontrado"
+                    content="{{notFoundList}}"
+                    class="half-panel"></app-base-panel>
+  </div>
+</div>
